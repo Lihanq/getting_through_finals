@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Getting through final week</title>
+        <meta charset = "utf-8">
+        <script src = "game.js"></script>
+        <link rel = "stylesheet" href = "game.css">
+    </head>
+    <body onKeyDown = "getKeys(event)">
+        <h1>Getting Through Final Week</h1>
+        <div id = "gameboard">
+            <img id = "textbook" src = "images/book_closed.png" alt = "pic of a textbook" height = 50 width = 70>
+            <img id = "switch" src = "images/switch.png" alt = "game can destroy your final week" height = 30 width = 60>
+            <img id = "student" src = "images/student.png" alt = "a student who is struggling through final week" height = 150 width = 210>
+        </div>
+        <input id = "start" value = "Click to start game" onClick = "startGame()">
+        <div id = "scorePanel">
+            <p id = "score">Score: </p>
+        </div>
+        <div id = "control_panel">
+            <img id = "moveRight" type = 'button' src = "images/button-r.png" alt = "right_button" height = 58 width = 55 onClick = "moveRight('student')">
+            <img type = 'button' id = "moveLeft" src = "images/button-l.png" alt = "left_button" height = 58 width = 55 onClick = "moveLeft('student')">
+            <img id = "moveUp" type = 'button' src = "images/button-u.png" alt = "up_button" height = 55 width = 58 onClick = "moveUp('student')">
+            <img type = 'button' id = "moveDown" src = "images/button-d.png" alt = "down_button" height = 55 width = 58 onClick = "moveDown('student')">
+        </div>
+        <p id = "keyInstructions">*Press "&#8593" "&#8595" "&#8592" "&#8594" to control your movement, and press "s" to check you score. </p>
+    </body>
+</html>
